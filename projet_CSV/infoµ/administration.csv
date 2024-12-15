@@ -1,0 +1,33 @@
+Product Name,Category,Department,Quantity,Date of Purchase,Price,Supplier,Unit,Location
+Staplers,Office Supplies,Administration,25,2024-12-02,$7.49,OfficeTools LLC,Piece,New York Office
+Staples,Office Supplies,Administration,200,2024-12-02,$3.99,OfficeSuppliesCo,Box,New York Office
+Paper Clips,Office Supplies,Administration,300,2024-12-03,$1.99,OfficeMart,Box,New York Office
+Post-It Notes (Yellow),Office Supplies,Administration,150,2024-12-04,$10.99,PaperProductsCo,Pack,New York Office
+Post-It Notes (Assorted),Office Supplies,Administration,100,2024-12-04,$12.49,PaperProductsCo,Pack,New York Office
+Envelopes (Letter Size),Office Supplies,Administration,500,2024-12-05,$9.99,PaperSupply Inc.,Pack,New York Office
+File Folders (Manila),Office Supplies,Administration,100,2024-12-06,$6.50,FileCo,Box,New York Office
+File Folders (Colored),Office Supplies,Administration,75,2024-12-06,$8.00,FileCo,Box,New York Office
+Binders (3-ring),Office Supplies,Administration,20,2024-12-08,$3.99,OfficeTools LLC,Piece,New York Office
+Binder Clips,Office Supplies,Administration,200,2024-12-09,$2.99,OfficeTools LLC,Box,New York Office
+Rubber Bands,Office Supplies,Administration,500,2024-12-09,$1.79,OfficeMart,Box,New York Office
+Scissors (Office),Office Supplies,Administration,15,2024-12-10,$6.00,OfficeMart,Piece,New York Office
+Whiteboard Markers,Office Supplies,Administration,30,2024-12-11,$12.00,WriteRight Co.,Pack,New York Office
+Highlighter Pens (Yellow),Office Supplies,Administration,50,2024-12-12,$4.50,OfficeTools LLC,Pack,New York Office
+Ballpoint Pens (Black),Office Supplies,Administration,300,2024-12-12,$15.00,OfficeSupply Inc.,Box,New York Office
+Ballpoint Pens (Blue),Office Supplies,Administration,300,2024-12-13,$15.00,OfficeSupply Inc.,Box,New York Office
+Office Desks (Wooden),Office Furniture,Administration,15,2024-11-10,$199.99,OfficeFurnitureCo,Piece,New York Office
+Adjustable Office Chairs,Office Furniture,Administration,25,2024-11-12,$99.99,ChairMasters Inc.,Piece,New York Office
+Ergonomic Office Chairs,Office Furniture,Administration,20,2024-11-15,$149.99,ChairMasters Inc.,Piece,New York Office
+Filing Cabinets (2-drawer),Office Furniture,Administration,10,2024-11-16,$99.99,FilingSolutions,Piece,New York Office
+Filing Cabinets (4-drawer),Office Furniture,Administration,5,2024-11-17,$149.99,FilingSolutions,Piece,Admin Dept
+Office Bookcases,Office Furniture,Library,8,2024-11-18,$129.99,FurniturePlus,Piece,New York Office
+Storage Cabinets (Wood),Office Furniture,Administration,8,2024-12-06,$199.99,OfficeStorage,Piece,New York Office
+File Sorters,Office Furniture,Administration,15,2024-12-31,$29.99,FileCo,Piece,New York Office
+Desk Organizers,Office Furniture,Administration,40,2024-12-31,$12.99,StoragePlus,Piece,New York Office
+Phone Holders,Office Furniture,Administration,60,2024-12-31,$5.99,TechTools,Piece,New York Office
+Time Clocks,Office Equipment,Human Resources,6,2024-12-19,$159.99,ClockWorks,Piece,HR Dept
+Shredding Bins,Office Equipment,Facilities,25,2024-12-20,$12.99,ShredWorks,Piece,Facilities Dept
+Office Lighting (LED),Office Furniture,Facilities,30,2024-12-10,$29.99,LightWorks,Piece,New York Office
+Floor Mats (Anti-Fatigue),Office Furniture,Administration,30,2024-12-22,$29.99,MatsPlus,Piece,New York Office
+Desktop Organizers,Office Furniture,Administration,100,2024-12-23,$7.99,OfficeSuppliesCo,Piece,New York Office
+Recycling Bins,Office Furniture,Facilities,30,2024-12-31,$8.99,StorageWorks,Piece,Facilities Dept
