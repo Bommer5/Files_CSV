@@ -1,9 +1,22 @@
 import csv
-import variable
+import os
+import glob
 import db
+import variable
+
+# Constants to represent column indices for better readability
+COLUMN_PRODUCT_NAME = 0
+COLUMN_CATEGORY = 1
+COLUMN_DEPARTMENT = 2
+COLUMN_QUANTITY = 3
+COLUMN_PURCHASE_DATE = 4
+COLUMN_PRICE = 5
+COLUMN_SUPPLIER = 6
+COLUMN_UNIT = 7
+COLUMN_LOCATION = 8
 
 
-class file_CSV:
+class CSVFileProcessor:
     def __init__(self, filename):
         self.filename = filename
         self.header = None
@@ -13,7 +26,7 @@ class file_CSV:
         try:
             with open(self.filename, 'r') as file:
                 reader = csv.reader(file)
-                self.header = next(reader, None)  # Récupère l'entête, ou None si vide
+                self.header = next(reader, None)  # Fetch header, or None if empty
                 self.data = [row for row in reader]
         except FileNotFoundError:
             print(f"Error: The file {self.filename} was not found.")
@@ -26,36 +39,48 @@ class file_CSV:
     def get_data(self):
         return self.data
 
-# Effectuer la lecture des fichiers CSV et remplir les tables dans la base de données
+
+def process_csv_file(file_path):
+    csv_processor = CSVFileProcessor(file_path)
+    csv_processor.read_file()
+    print(f"The file {csv_processor.filename} has the header: {csv_processor.get_header()}")
+
+    for row in csv_processor.get_data():
+        # Extract values from the row
+        department = row[COLUMN_DEPARTMENT]
+        product = row[COLUMN_PRODUCT_NAME]
+        quantity = int(row[COLUMN_QUANTITY])
+        price = row[COLUMN_PRICE][1:]
+        category = row[COLUMN_CATEGORY]
+
+        supplier = row[COLUMN_SUPPLIER]
+        purchase_date = row[COLUMN_PURCHASE_DATE]
+
+        unit = row[COLUMN_UNIT]
+        location = row[COLUMN_LOCATION]
+
+        print(
+            f"Processing data for Department: {department}, Product: {product}, Quantity: {quantity}, Price: {price}, Category: {category}, Purchase Date: {purchase_date}, Supplier: {supplier}, Unit: {unit}, Location: {location}"
+        )
+        # Insert or fetch IDs and add data to the database
+        department_id = db.ajouter_departement(department)
+        product_id = db.ajouter_produit(product)
+        category_id = db.ajouter_catégories(category)
+        supplier_id = db.ajouter_supplier(supplier)
+        unit_id = db.ajouter_unit(unit)
+        location_id = db.ajouter_location(location)
+        data_id = db.ajouter_data(department_id, product_id, category_id, price, quantity, purchase_date)
+
+
+        print(
+            f"Added Data: Department({department_id}), Product({product_id}), Category({category_id}), Data({data_id})"
+        )
+
+
+# Main script
 if __name__ == "__main__":
     db.creer_base_de_donnees()
-    for file in variable.CSV_DIRECTORY:
-        content = file_CSV(file)
-        content.read_file()  # Lire les données du fichier CSV
-        print(f"The file {content.filename} has the header: {content.get_header()}")
+    csv_files = glob.glob(os.path.join(variable.CSV_DIRECTORY, "*.csv"))
 
-        # Insérer les données ligne par ligne
-        for row in content.get_data():
-            # Lire les valeurs depuis la ligne
-            departement = row[0]  # Colonne "departement_nom"
-            produit = row[1]  # Colonne "product_name"
-            quantité = int(row[2])  # Colonne "quantity"
-            prix = float(row[3])  # Colonne "unit_price"
-            catégorie = row[4]  # Colonne "category"
-
-            # Étape 1 : Ajouter ou récupérer l'ID du département
-            departement_id = db.ajouter_departement(departement)
-
-            # Étape 2 : Ajouter ou récupérer l'ID du produit
-            produit_id = db.ajouter_produit(produit, prix, quantité)
-
-            # Étape 3 : Ajouter ou récupérer l'ID de la catégorie
-            catégorie_id = db.ajouter_catégories(catégorie)
-
-            # Étape 4 : Ajouter les informations dans la table `data`
-            data_id = db.ajouter_data(departement_id, produit_id, catégorie_id)
-
-            print(
-                f"Ajout des données : Département({departement_id}), Produit({produit_id}), Catégorie({catégorie_id}), Data({data_id})")
-
-
+    for file_path in csv_files:
+        process_csv_file(file_path)
