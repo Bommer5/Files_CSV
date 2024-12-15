@@ -1,0 +1,28 @@
+Product Name,Category,Department,Quantity,Date of Purchase,Price,Supplier,Unit,Location
+Ink Cartridges (Black),Office Supplies,IT,50,2024-11-25,$19.99,TechSupply Inc.,Cartridge,IT Department
+Ink Cartridges (Color),Office Supplies,IT,30,2024-11-25,$22.99,TechSupply Inc.,Cartridge,IT Department
+Desktop Computers,Electronics,IT,25,2024-11-15,$499.99,TechSupply Inc.,Piece,IT Department
+Laptops,Electronics,IT,40,2024-11-16,$999.99,Computech Ltd.,Piece,IT Department
+Computer Mice (Wireless),Electronics,IT,60,2024-11-17,$20.00,GadgetWorks Co.,Piece,IT Department
+Computer Mice (Wired),Electronics,IT,40,2024-11-18,$15.99,GadgetWorks Co.,Piece,IT Department
+Keyboards (Wireless),Electronics,IT,50,2024-11-19,$29.99,TechSupply Inc.,Piece,IT Department
+Keyboards (Wired),Electronics,IT,30,2024-11-19,$22.00,TechSupply Inc.,Piece,IT Department
+Monitors (24-inch),Electronics,IT,20,2024-11-20,$189.99,VisionTech Corp.,Piece,IT Department
+Monitors (27-inch),Electronics,IT,15,2024-11-21,$249.99,VisionTech Corp.,Piece,IT Department
+External Hard Drives (1TB),Electronics,IT,10,2024-11-22,$69.99,DataStorage Co.,Piece,IT Department
+External Hard Drives (2TB),Electronics,IT,5,2024-11-23,$89.99,DataStorage Co.,Piece,IT Department
+USB Flash Drives (16GB),Electronics,IT,50,2024-11-23,$7.99,FlashTech Inc.,Piece,IT Department
+USB Flash Drives (32GB),Electronics,IT,30,2024-11-24,$10.99,FlashTech Inc.,Piece,IT Department
+Webcams,Electronics,IT,15,2024-11-25,$35.99,TechVision Co.,Piece,IT Department
+Headsets (USB),Electronics,IT,20,2024-11-26,$45.00,AudioTech Ltd.,Piece,IT Department
+Wireless Routers,Electronics,IT,10,2024-11-29,$75.00,NetSolutions Co.,Piece,IT Department
+Smartphones,Electronics,IT,15,2024-12-30,$599.99,MobileTech Inc.,Piece,IT Department
+Ergonomic Keyboards,Electronics,IT,20,2024-12-31,$129.99,TechSupply Inc.,Piece,IT Department
+Ergonomic Mouse,Electronics,IT,40,2024-12-31,$49.99,MouseTech Co.,Piece,IT Department
+3D Printers,Electronics,Design,4,2024-12-31,$799.99,PrintWorks,Piece,Design Dept
+Graphic Tablets,Electronics,Design,10,2024-12-31,$199.99,ArtTech Co.,Piece,Design Dept
+Document Scanners,Office Equipment,IT,20,2024-12-31,$249.99,ScanTech Co.,Piece,IT Department
+External Keyboards,Electronics,IT,50,2024-12-28,$19.99,TechSupply Inc.,Piece,IT Department
+Tablet Stands,Electronics,IT,25,2024-12-25,$15.99,TechWorks,Piece,IT Department
+Laptop Stands,Electronics,IT,20,2024-12-27,$22.99,GadgetWorks Co.,Piece,IT Department
+Power Banks,Electronics,IT,30,2024-12-26,$25.99,PowerTech,Piece,IT Department
