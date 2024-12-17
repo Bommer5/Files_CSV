@@ -1,2 +1,2 @@
-CSV_DIRECTORY = "infoµ"
+CSV_DIRECTORY = "info"
 OUTPUT_FILE = "consolidated.csv"
